@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NBCollageView_Example' do
+  pod 'NBCollageView', :path => '../'
+
+  target 'NBCollageView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
