@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NBCollageView'
-  s.version          = '0.1'
+  s.version          = '0.2'
   s.summary          = 'Helps you create new collages dynamically without worrying about minute gestures'
   s.swift_version    = '3.0'
 
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nikhilbatra789' => 'nikhilbatra789@gmail.com' }
-  s.source           = { :git => 'https://github.com/nikhilbatra789/NBCollageView.git', :tag => s.version }
+  s.source           = { :git => 'https://github.com/nikhilbatra789/NBCollageView.git', :tag => '0.2' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
