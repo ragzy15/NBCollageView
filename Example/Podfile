@@ -1,8 +1,10 @@
 use_frameworks!
 
 target 'NBCollageView_Example' do
+  
   pod 'NBCollageView', :path => '../'
-
+  pod 'ImagePicker', '~> 3.0'
+  
   target 'NBCollageView_Tests' do
     inherit! :search_paths
 

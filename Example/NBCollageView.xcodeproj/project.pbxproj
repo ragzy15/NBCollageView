@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1A7E13F93EC76D5778D673CE /* Pods_NBCollageView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF408838E64187F3249F335 /* Pods_NBCollageView_Example.framework */; };
 		2B18B789F34DE1A519FDB92C /* Pods_NBCollageView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055B09A9897BE5A99C4A157E /* Pods_NBCollageView_Tests.framework */; };
+		404059D42069152A00AA0446 /* CollageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404059D32069152A00AA0446 /* CollageController.swift */; };
+		40AF28E5206925EF00897E98 /* CollageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF28E3206925EF00897E98 /* CollageItem.swift */; };
+		40AF28E6206925EF00897E98 /* Collages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40AF28E4206925EF00897E98 /* Collages.plist */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,10 +32,13 @@
 
 /* Begin PBXFileReference section */
 		055B09A9897BE5A99C4A157E /* Pods_NBCollageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBCollageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07128EFE25CAD9492F3D269D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		24830F8EE529318A0A46AD3F /* NBCollageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NBCollageView.podspec; path = ../NBCollageView.podspec; sourceTree = "<group>"; };
+		07128EFE25CAD9492F3D269D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		24830F8EE529318A0A46AD3F /* NBCollageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NBCollageView.podspec; path = ../NBCollageView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2E4F273627D362D1DE40D7B6 /* Pods-NBCollageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCollageView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBCollageView_Tests/Pods-NBCollageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4B49EF72F1BC1E294DCBE8E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		404059D32069152A00AA0446 /* CollageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageController.swift; sourceTree = "<group>"; };
+		40AF28E3206925EF00897E98 /* CollageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageItem.swift; sourceTree = "<group>"; };
+		40AF28E4206925EF00897E98 /* Collages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Collages.plist; sourceTree = "<group>"; };
+		4B49EF72F1BC1E294DCBE8E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NBCollageView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBCollageView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 		607FACD21AFB9204008FA782 /* Example for NBCollageView */ = {
 			isa = PBXGroup;
 			children = (
+				40AF28E3206925EF00897E98 /* CollageItem.swift */,
+				40AF28E4206925EF00897E98 /* Collages.plist */,
+				404059D32069152A00AA0446 /* CollageController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -250,6 +259,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				40AF28E6206925EF00897E98 /* Collages.plist in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,10 +281,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NBCollageView_Example/Pods-NBCollageView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/NBCollageView/NBCollageView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NBCollageView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				404059D42069152A00AA0446 /* CollageController.swift in Sources */,
+				40AF28E5206925EF00897E98 /* CollageItem.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
