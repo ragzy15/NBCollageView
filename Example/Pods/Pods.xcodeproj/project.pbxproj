@@ -1,0 +1,1132 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		063861C4B2DFE422044AD15B677B0524 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		0CB932091B520E7F65A74FBFA3FF11A2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4B2903EECFBCDAE53859470C161BF /* Helper.swift */; };
+		0EAB81EA5C0B8AD03BA9CEDBE641DB0B /* ImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E8334E72C1E6FA9BB7238218C166388D /* ImagePicker.bundle */; };
+		1BA3717739BBA5C6DCE0EB2A455E8FDB /* ImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9CA7D20F6554BA3E829A1EEF4B5F27 /* ImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27E5AAC40E8C4D8DFF70DF4E7021D68E /* ImageGalleryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E1AA57C279D49069D9DBD188B0A97 /* ImageGalleryViewCell.swift */; };
+		3289BB733162220ED264F8670D25B9D0 /* Pods-NBCollageView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E2DD607E88CEB02D89FABEC774B35C /* Pods-NBCollageView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39528BEA185C60BFFE2E5909006E723D /* OFF@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B80BAB2FE6890E02BE7C496404E9F8B0 /* OFF@3x.png */; };
+		4A6FAE1400EDF107F30268740CB8BDFC /* Pods-NBCollageView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C24C2F3C4DD4808144E9959DD1555B3E /* Pods-NBCollageView_Example-dummy.m */; };
+		4B043088449CCBB537A54D669ED216C5 /* ImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2289351A48FEA9F56589075DF71797CD /* ImagePicker-dummy.m */; };
+		4B737F3ED950E9A32D402A3A6B200EDD /* Pods-NBCollageView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FE37F3EA3678437457E069F4BD5015 /* Pods-NBCollageView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		583FD99362178A833593AD1AF70E022B /* NBCollageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE1B0166F281AB2573A153AC25BD6709 /* NBCollageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F3E35F2B166055EEC4E7A50E80958FD /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C9698DCFA37FC3175CAD93B4DB0D /* CameraView.swift */; };
+		680ECF5AE2B82F3A13B49AC0C5D78D74 /* ImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60BE1E1221D8665D2C2F1152602D50 /* ImageStack.swift */; };
+		7436A38892A9DBD5155E3716DCAAE669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		7750B41B6FEAF447DD89237E2920FE30 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */; };
+		79F0F2B66DD88DB794079D43A89AF7EC /* NBCollageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F055CD82F08AA8DC50F9ED6A373D9C /* NBCollageView-dummy.m */; };
+		7BB0D44E3938626F29853182C9205AE7 /* BottomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC2455D2BA0CFE82B1A2CD764AF07C /* BottomContainerView.swift */; };
+		87447A770ED03562E32E19EB24885C53 /* NBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044402D0A3C18F3CDF56A490A57DF4D /* NBExtensions.swift */; };
+		8A97BCA1E8E4140A84AF581D9BFA4711 /* ImageGalleryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4782C4A1C2228BE332DE3A560D735D4 /* ImageGalleryLayout.swift */; };
+		8ADC7BE06862E7A8D631BD7A987CC983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		935C2F84774171D23DFC43DA57F172F8 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337DDACE077EABC2F471DB42F1BE12E /* ImagePickerController.swift */; };
+		9C08B9E9C65989202C32C6CFA749EDC8 /* NBCollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3854D99CEFDA84F762004732445C5CE4 /* NBCollageView.swift */; };
+		9D8234BB3230E63318FB87CAA29AD59C /* ImageGalleryViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843A237FC8074E3CA94A69E7A0B950D /* ImageGalleryViewDataSource.swift */; };
+		A3D56D26C9EAE0FCA76083C1E7DC6847 /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8A81E129FFE316F1C8A29220313F64 /* CameraMan.swift */; };
+		A44FEA8F8C9099C426A5DF8BC50C912B /* ConstraintsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE024880F43FE8D5CDC8D0746295F74 /* ConstraintsSetup.swift */; };
+		A50F09D10E907DEE57D57C6AD160F8F7 /* ON@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD8017D12BF271CB3D0328C4B9630F9 /* ON@3x.png */; };
+		AA80FEA6CA527BC3B6263E536298BD38 /* NBCollageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BE6CBB660172B9271A534E8DB86707 /* NBCollageElement.swift */; };
+		AAE3B839B228D2FB151791C791242D04 /* AUTO@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB53CC5242B5E4DF2B562B0040E0FC /* AUTO@3x.png */; };
+		ABABE9A664BE4FA340532E7F6349B16A /* Pods-NBCollageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBDCEDC3AF85AEF2A5D0BE10F2600E5 /* Pods-NBCollageView_Tests-dummy.m */; };
+		B0DED102D2452EC7DEB173264004161A /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A805861C4092810E90249162D531A6BF /* TopView.swift */; };
+		B7EA24AFF7D230810AB18E2C89544208 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD576E8FB8BC8494A329D769A2ED69A /* Configuration.swift */; };
+		C3290D6F80FE6EE0D5D6D419C93D0E80 /* cameraIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E58DA37A519E8ED71661ABEFBE889DB /* cameraIcon@3x.png */; };
+		D7CC87164C2B724F1EAABCF6A9A068F4 /* focusIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A8478F94A28643CE0F43BF9EA7E6 /* focusIcon@3x.png */; };
+		DD8C6F683BF022AF2CAA712CB95F5836 /* VideoInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36665439190760C5A1EF54620FC2B6EB /* VideoInfoView.swift */; };
+		DDFA8B7BE2EA5E19E7B475915355D477 /* video@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD76E9C05780071E1F7180E39DB59BF /* video@3x.png */; };
+		DEC05FECB37B24E58F284AC9B97F7E64 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B33709534350C49F266E9B11FF07DF8 /* StackView.swift */; };
+		E1669C0B5B461E5FDA3CFEB00E084620 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		EABB4532135FDC89BFC940ED172E901E /* ButtonPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EC021DF64ABCEC5C9D35A370A107F6 /* ButtonPicker.swift */; };
+		F6142E7525478016188C33344951C540 /* ImageGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9970E49D10D3ED332B8AF2EBE1DBB49 /* ImageGalleryView.swift */; };
+		F7DB16A5D3874C16C5E6C70CEBFADC95 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D77FD31E4D8E3B32C1C188B97DBC8B /* LocationManager.swift */; };
+		F88AC4C283F4CE67030F4321693BBAAA /* selectedImageGallery@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 347842AB0045A8FE8701CDA4805D6399 /* selectedImageGallery@3x.png */; };
+		F9F53B83877BABC897067AC39EC03A63 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0627834CB360D3115C9517312C7048C /* AssetManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B8986630584C6CBE06F80050CD944A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88D0D45A202C76CDCB9546091A25AB0B;
+			remoteInfo = "ImagePicker-ImagePicker";
+		};
+		9423AD27CA8FA99E5C9FF5E78877EA3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57E050FE0AB30C37FD606F486CD67966;
+			remoteInfo = NBCollageView;
+		};
+		A8F22D9EF8AD65B4244A48DDF7D28AF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A17CB894371F02E0326064851AF7C43;
+			remoteInfo = ImagePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04D6A22A492911FD7EB47BC127ED31FC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		05BEF17780EBE9BF9F8394FDB03FADA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ADACFB857DA2DB8643774E40E712B9B /* Pods-NBCollageView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NBCollageView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0BBAF8EC8FBA7D5CB7DBE984372BB477 /* ImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ImagePicker.framework; path = ImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CA25B22EE479A70D324BF6AF2A6DC0 /* NBCollageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NBCollageView.framework; path = NBCollageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A60BE1E1221D8665D2C2F1152602D50 /* ImageStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageStack.swift; path = Source/BottomView/ImageStack.swift; sourceTree = "<group>"; };
+		2289351A48FEA9F56589075DF71797CD /* ImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImagePicker-dummy.m"; sourceTree = "<group>"; };
+		253CFBEAE45419286EE81AD640AB12A1 /* Pods-NBCollageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBCollageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		29C56115526BCD565385C7E24154CA16 /* Pods-NBCollageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBCollageView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2C360CA787FECDEA5B14E472C2742A20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E25A8478F94A28643CE0F43BF9EA7E6 /* focusIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "focusIcon@3x.png"; path = "Images/focusIcon@3x.png"; sourceTree = "<group>"; };
+		347842AB0045A8FE8701CDA4805D6399 /* selectedImageGallery@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "selectedImageGallery@3x.png"; path = "Images/selectedImageGallery@3x.png"; sourceTree = "<group>"; };
+		36665439190760C5A1EF54620FC2B6EB /* VideoInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoInfoView.swift; path = Source/ImageGallery/VideoInfoView.swift; sourceTree = "<group>"; };
+		36B0C8CDE740C347342FD31E597A39CE /* Pods-NBCollageView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NBCollageView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3854D99CEFDA84F762004732445C5CE4 /* NBCollageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NBCollageView.swift; path = NBCollageView/Classes/NBCollageView.swift; sourceTree = "<group>"; };
+		4337DDACE077EABC2F471DB42F1BE12E /* ImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePickerController.swift; path = Source/ImagePickerController.swift; sourceTree = "<group>"; };
+		45DB53CC5242B5E4DF2B562B0040E0FC /* AUTO@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "AUTO@3x.png"; path = "Images/AUTO@3x.png"; sourceTree = "<group>"; };
+		49D98EA654D21D7E2032C515A87E6F80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B2E9F94E5962A13F9248E4BAAB67121 /* ImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImagePicker.xcconfig; sourceTree = "<group>"; };
+		5044402D0A3C18F3CDF56A490A57DF4D /* NBExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NBExtensions.swift; path = NBCollageView/Classes/NBExtensions.swift; sourceTree = "<group>"; };
+		5598C9698DCFA37FC3175CAD93B4DB0D /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = Source/CameraView/CameraView.swift; sourceTree = "<group>"; };
+		5811FDBD85243C2D2F6CF9B0EA586BAD /* NBCollageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NBCollageView.modulemap; sourceTree = "<group>"; };
+		6AD76E9C05780071E1F7180E39DB59BF /* video@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video@3x.png"; path = "Images/video@3x.png"; sourceTree = "<group>"; };
+		6B33709534350C49F266E9B11FF07DF8 /* StackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StackView.swift; path = Source/BottomView/StackView.swift; sourceTree = "<group>"; };
+		6C9E1AA57C279D49069D9DBD188B0A97 /* ImageGalleryViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGalleryViewCell.swift; path = Source/ImageGallery/ImageGalleryViewCell.swift; sourceTree = "<group>"; };
+		6DCC2455D2BA0CFE82B1A2CD764AF07C /* BottomContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomContainerView.swift; path = Source/BottomView/BottomContainerView.swift; sourceTree = "<group>"; };
+		72BCDD2271F7947C500D3B9ED2027E76 /* ResourceBundle-ImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ImagePicker-Info.plist"; sourceTree = "<group>"; };
+		7A38264E5EF0EFF2E700FE1691AEF619 /* Pods-NBCollageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBCollageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		8648173DB6CDA58A71F53A714A899512 /* NBCollageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NBCollageView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		89CB6AE72C0A51D10C23BABDB69D8B68 /* NBCollageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NBCollageView.xcconfig; sourceTree = "<group>"; };
+		8AF4B2903EECFBCDAE53859470C161BF /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Source/Helper.swift; sourceTree = "<group>"; };
+		8DBDCEDC3AF85AEF2A5D0BE10F2600E5 /* Pods-NBCollageView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NBCollageView_Tests-dummy.m"; sourceTree = "<group>"; };
+		91E7857F0F6A1BBC420452AAC9BBB512 /* ImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95BE6CBB660172B9271A534E8DB86707 /* NBCollageElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NBCollageElement.swift; path = NBCollageView/Classes/NBCollageElement.swift; sourceTree = "<group>"; };
+		9700128E4588CF6C2CA4DE488FA40A4D /* Pods-NBCollageView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NBCollageView_Example.modulemap"; sourceTree = "<group>"; };
+		984F5897D1BF1A7B4B743BD9B2FD2C5D /* Pods_NBCollageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NBCollageView_Tests.framework; path = "Pods-NBCollageView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A8A81E129FFE316F1C8A29220313F64 /* CameraMan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraMan.swift; path = Source/CameraView/CameraMan.swift; sourceTree = "<group>"; };
+		9A9CA7D20F6554BA3E829A1EEF4B5F27 /* ImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		9ABD8A864C265349467B9F40586E3ADE /* NBCollageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBCollageView-prefix.pch"; sourceTree = "<group>"; };
+		9E58DA37A519E8ED71661ABEFBE889DB /* cameraIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cameraIcon@3x.png"; path = "Images/cameraIcon@3x.png"; sourceTree = "<group>"; };
+		9E994DAA07C3D9BCDEA6A9EB03090B18 /* Pods-NBCollageView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBCollageView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9FD8017D12BF271CB3D0328C4B9630F9 /* ON@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ON@3x.png"; path = "Images/ON@3x.png"; sourceTree = "<group>"; };
+		A07142759784035CDBFF86B6D78CC89D /* Pods-NBCollageView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NBCollageView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A40AE10D5791D8D6ADA7819C8B791B27 /* Pods_NBCollageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NBCollageView_Example.framework; path = "Pods-NBCollageView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F055CD82F08AA8DC50F9ED6A373D9C /* NBCollageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NBCollageView-dummy.m"; sourceTree = "<group>"; };
+		A805861C4092810E90249162D531A6BF /* TopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TopView.swift; path = Source/TopView/TopView.swift; sourceTree = "<group>"; };
+		A9970E49D10D3ED332B8AF2EBE1DBB49 /* ImageGalleryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGalleryView.swift; path = Source/ImageGallery/ImageGalleryView.swift; sourceTree = "<group>"; };
+		AB8FF4474568AFAF15D0374E2A7E52E6 /* Pods-NBCollageView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBCollageView_Example-resources.sh"; sourceTree = "<group>"; };
+		B08650726988296F9F014423820CE836 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3FE37F3EA3678437457E069F4BD5015 /* Pods-NBCollageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NBCollageView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B4782C4A1C2228BE332DE3A560D735D4 /* ImageGalleryLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGalleryLayout.swift; path = Source/ImageGallery/ImageGalleryLayout.swift; sourceTree = "<group>"; };
+		B7EC021DF64ABCEC5C9D35A370A107F6 /* ButtonPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonPicker.swift; path = Source/BottomView/ButtonPicker.swift; sourceTree = "<group>"; };
+		B80BAB2FE6890E02BE7C496404E9F8B0 /* OFF@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "OFF@3x.png"; path = "Images/OFF@3x.png"; sourceTree = "<group>"; };
+		BACCE22A628B1500687A9C631C4CEF34 /* Pods-NBCollageView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NBCollageView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD26C93DEB51F6049411E82CF7A0EE90 /* Pods-NBCollageView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBCollageView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C24C2F3C4DD4808144E9959DD1555B3E /* Pods-NBCollageView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NBCollageView_Example-dummy.m"; sourceTree = "<group>"; };
+		CAE024880F43FE8D5CDC8D0746295F74 /* ConstraintsSetup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintsSetup.swift; path = Source/Extensions/ConstraintsSetup.swift; sourceTree = "<group>"; };
+		CE90770384ACF3A3F021DFD7293BF674 /* ImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ImagePicker.modulemap; sourceTree = "<group>"; };
+		CFD576E8FB8BC8494A329D769A2ED69A /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Source/Configuration.swift; sourceTree = "<group>"; };
+		D739A63E7A53EF42BD969FD91FC31BAB /* Pods-NBCollageView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NBCollageView_Tests-resources.sh"; sourceTree = "<group>"; };
+		E0627834CB360D3115C9517312C7048C /* AssetManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetManager.swift; path = Source/AssetManager.swift; sourceTree = "<group>"; };
+		E1DFBD963D1C61EC5FDE6DE2DE4B942D /* Pods-NBCollageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NBCollageView_Tests.modulemap"; sourceTree = "<group>"; };
+		E8334E72C1E6FA9BB7238218C166388D /* ImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ImagePicker.bundle; path = "ImagePicker-ImagePicker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E843A237FC8074E3CA94A69E7A0B950D /* ImageGalleryViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGalleryViewDataSource.swift; path = Source/ImageGallery/ImageGalleryViewDataSource.swift; sourceTree = "<group>"; };
+		EAAD0CD34F4481D71DE02D893D39A7D7 /* Pods-NBCollageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NBCollageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ED9175480AD0EEED72FEBF3645472453 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EE1B0166F281AB2573A153AC25BD6709 /* NBCollageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBCollageView-umbrella.h"; sourceTree = "<group>"; };
+		F5E2DD607E88CEB02D89FABEC774B35C /* Pods-NBCollageView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NBCollageView_Example-umbrella.h"; sourceTree = "<group>"; };
+		F6D77FD31E4D8E3B32C1C188B97DBC8B /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Source/LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05F7DF4B803CF6FDF2CB97B32472143C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7436A38892A9DBD5155E3716DCAAE669 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110E2611FD5754C36D751DFF05044166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7750B41B6FEAF447DD89237E2920FE30 /* AVFoundation.framework in Frameworks */,
+				8ADC7BE06862E7A8D631BD7A987CC983 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826A5CB03FB5434090737CEAAC0C6B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1669C0B5B461E5FDA3CFEB00E084620 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43929DE227686F8351141AC72417364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063861C4B2DFE422044AD15B677B0524 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30E4275DF37ADD0BF5C8056076BF5C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B3EDB972CE3881DAFF922100E5C511D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				04D6A22A492911FD7EB47BC127ED31FC /* LICENSE */,
+				8648173DB6CDA58A71F53A714A899512 /* NBCollageView.podspec */,
+				ED9175480AD0EEED72FEBF3645472453 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1888839C4F8B8445AFDECC05114858E7 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				E0627834CB360D3115C9517312C7048C /* AssetManager.swift */,
+				6DCC2455D2BA0CFE82B1A2CD764AF07C /* BottomContainerView.swift */,
+				B7EC021DF64ABCEC5C9D35A370A107F6 /* ButtonPicker.swift */,
+				9A8A81E129FFE316F1C8A29220313F64 /* CameraMan.swift */,
+				5598C9698DCFA37FC3175CAD93B4DB0D /* CameraView.swift */,
+				CFD576E8FB8BC8494A329D769A2ED69A /* Configuration.swift */,
+				CAE024880F43FE8D5CDC8D0746295F74 /* ConstraintsSetup.swift */,
+				8AF4B2903EECFBCDAE53859470C161BF /* Helper.swift */,
+				B4782C4A1C2228BE332DE3A560D735D4 /* ImageGalleryLayout.swift */,
+				A9970E49D10D3ED332B8AF2EBE1DBB49 /* ImageGalleryView.swift */,
+				6C9E1AA57C279D49069D9DBD188B0A97 /* ImageGalleryViewCell.swift */,
+				E843A237FC8074E3CA94A69E7A0B950D /* ImageGalleryViewDataSource.swift */,
+				4337DDACE077EABC2F471DB42F1BE12E /* ImagePickerController.swift */,
+				1A60BE1E1221D8665D2C2F1152602D50 /* ImageStack.swift */,
+				F6D77FD31E4D8E3B32C1C188B97DBC8B /* LocationManager.swift */,
+				6B33709534350C49F266E9B11FF07DF8 /* StackView.swift */,
+				A805861C4092810E90249162D531A6BF /* TopView.swift */,
+				36665439190760C5A1EF54620FC2B6EB /* VideoInfoView.swift */,
+				FC0F8A38B500633A78CD4D97FD49CF9F /* Resources */,
+				6FB3FF5ED81A80769C26A22BA6864F2E /* Support Files */,
+			);
+			name = ImagePicker;
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		34690F75DA43A27BBF467420D25C0480 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1888839C4F8B8445AFDECC05114858E7 /* ImagePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44F86303F5D067CBA10F445C527139B5 /* Pods-NBCollageView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49D98EA654D21D7E2032C515A87E6F80 /* Info.plist */,
+				E1DFBD963D1C61EC5FDE6DE2DE4B942D /* Pods-NBCollageView_Tests.modulemap */,
+				BACCE22A628B1500687A9C631C4CEF34 /* Pods-NBCollageView_Tests-acknowledgements.markdown */,
+				0ADACFB857DA2DB8643774E40E712B9B /* Pods-NBCollageView_Tests-acknowledgements.plist */,
+				8DBDCEDC3AF85AEF2A5D0BE10F2600E5 /* Pods-NBCollageView_Tests-dummy.m */,
+				9E994DAA07C3D9BCDEA6A9EB03090B18 /* Pods-NBCollageView_Tests-frameworks.sh */,
+				D739A63E7A53EF42BD969FD91FC31BAB /* Pods-NBCollageView_Tests-resources.sh */,
+				B3FE37F3EA3678437457E069F4BD5015 /* Pods-NBCollageView_Tests-umbrella.h */,
+				7A38264E5EF0EFF2E700FE1691AEF619 /* Pods-NBCollageView_Tests.debug.xcconfig */,
+				253CFBEAE45419286EE81AD640AB12A1 /* Pods-NBCollageView_Tests.release.xcconfig */,
+			);
+			name = "Pods-NBCollageView_Tests";
+			path = "Target Support Files/Pods-NBCollageView_Tests";
+			sourceTree = "<group>";
+		};
+		4E0BE54C1CFEADE4140FB6E82FE51F16 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C80758B83809DDED2DD7439F492EE0F9 /* NBCollageView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6FB3FF5ED81A80769C26A22BA6864F2E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE90770384ACF3A3F021DFD7293BF674 /* ImagePicker.modulemap */,
+				4B2E9F94E5962A13F9248E4BAAB67121 /* ImagePicker.xcconfig */,
+				2289351A48FEA9F56589075DF71797CD /* ImagePicker-dummy.m */,
+				91E7857F0F6A1BBC420452AAC9BBB512 /* ImagePicker-prefix.pch */,
+				9A9CA7D20F6554BA3E829A1EEF4B5F27 /* ImagePicker-umbrella.h */,
+				05BEF17780EBE9BF9F8394FDB03FADA9 /* Info.plist */,
+				72BCDD2271F7947C500D3B9ED2027E76 /* ResourceBundle-ImagePicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ImagePicker";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				4E0BE54C1CFEADE4140FB6E82FE51F16 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				34690F75DA43A27BBF467420D25C0480 /* Pods */,
+				D20B7FA70765070D6074DE526E5DB1B2 /* Products */,
+				81C3893691DF05FD81681EF314AAF35F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81C3893691DF05FD81681EF314AAF35F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD3C17258AB4C8BD2AC89AB4617CF7BC /* Pods-NBCollageView_Example */,
+				44F86303F5D067CBA10F445C527139B5 /* Pods-NBCollageView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9113B89E7F7B65A6F86A8BC015DEA4CE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C360CA787FECDEA5B14E472C2742A20 /* Info.plist */,
+				5811FDBD85243C2D2F6CF9B0EA586BAD /* NBCollageView.modulemap */,
+				89CB6AE72C0A51D10C23BABDB69D8B68 /* NBCollageView.xcconfig */,
+				A7F055CD82F08AA8DC50F9ED6A373D9C /* NBCollageView-dummy.m */,
+				9ABD8A864C265349467B9F40586E3ADE /* NBCollageView-prefix.pch */,
+				EE1B0166F281AB2573A153AC25BD6709 /* NBCollageView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NBCollageView";
+			sourceTree = "<group>";
+		};
+		AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */,
+				2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C80758B83809DDED2DD7439F492EE0F9 /* NBCollageView */ = {
+			isa = PBXGroup;
+			children = (
+				95BE6CBB660172B9271A534E8DB86707 /* NBCollageElement.swift */,
+				3854D99CEFDA84F762004732445C5CE4 /* NBCollageView.swift */,
+				5044402D0A3C18F3CDF56A490A57DF4D /* NBExtensions.swift */,
+				0B3EDB972CE3881DAFF922100E5C511D /* Pod */,
+				9113B89E7F7B65A6F86A8BC015DEA4CE /* Support Files */,
+			);
+			name = NBCollageView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D20B7FA70765070D6074DE526E5DB1B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8334E72C1E6FA9BB7238218C166388D /* ImagePicker.bundle */,
+				0BBAF8EC8FBA7D5CB7DBE984372BB477 /* ImagePicker.framework */,
+				15CA25B22EE479A70D324BF6AF2A6DC0 /* NBCollageView.framework */,
+				A40AE10D5791D8D6ADA7819C8B791B27 /* Pods_NBCollageView_Example.framework */,
+				984F5897D1BF1A7B4B743BD9B2FD2C5D /* Pods_NBCollageView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC0F8A38B500633A78CD4D97FD49CF9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45DB53CC5242B5E4DF2B562B0040E0FC /* AUTO@3x.png */,
+				9E58DA37A519E8ED71661ABEFBE889DB /* cameraIcon@3x.png */,
+				2E25A8478F94A28643CE0F43BF9EA7E6 /* focusIcon@3x.png */,
+				B80BAB2FE6890E02BE7C496404E9F8B0 /* OFF@3x.png */,
+				9FD8017D12BF271CB3D0328C4B9630F9 /* ON@3x.png */,
+				347842AB0045A8FE8701CDA4805D6399 /* selectedImageGallery@3x.png */,
+				6AD76E9C05780071E1F7180E39DB59BF /* video@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FD3C17258AB4C8BD2AC89AB4617CF7BC /* Pods-NBCollageView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B08650726988296F9F014423820CE836 /* Info.plist */,
+				9700128E4588CF6C2CA4DE488FA40A4D /* Pods-NBCollageView_Example.modulemap */,
+				36B0C8CDE740C347342FD31E597A39CE /* Pods-NBCollageView_Example-acknowledgements.markdown */,
+				A07142759784035CDBFF86B6D78CC89D /* Pods-NBCollageView_Example-acknowledgements.plist */,
+				C24C2F3C4DD4808144E9959DD1555B3E /* Pods-NBCollageView_Example-dummy.m */,
+				BD26C93DEB51F6049411E82CF7A0EE90 /* Pods-NBCollageView_Example-frameworks.sh */,
+				AB8FF4474568AFAF15D0374E2A7E52E6 /* Pods-NBCollageView_Example-resources.sh */,
+				F5E2DD607E88CEB02D89FABEC774B35C /* Pods-NBCollageView_Example-umbrella.h */,
+				EAAD0CD34F4481D71DE02D893D39A7D7 /* Pods-NBCollageView_Example.debug.xcconfig */,
+				29C56115526BCD565385C7E24154CA16 /* Pods-NBCollageView_Example.release.xcconfig */,
+			);
+			name = "Pods-NBCollageView_Example";
+			path = "Target Support Files/Pods-NBCollageView_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4516365CA0F1037223EBB8BA2F6D6537 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3289BB733162220ED264F8670D25B9D0 /* Pods-NBCollageView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A1E8CE87B81DE78D9C6CAF55847A457 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA3717739BBA5C6DCE0EB2A455E8FDB /* ImagePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D68481FCB508B999A4FBB13DCC77BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583FD99362178A833593AD1AF70E022B /* NBCollageView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22C4BD0948660905EF19D3CC4CCD82F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B737F3ED950E9A32D402A3A6B200EDD /* Pods-NBCollageView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07F37AB23E62115CF9E1872D746D2799 /* Pods-NBCollageView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E810AC73B574CEA4F0E47743051D190 /* Build configuration list for PBXNativeTarget "Pods-NBCollageView_Tests" */;
+			buildPhases = (
+				2C94746BA33C05E1800FD9B3354FE55E /* Sources */,
+				05F7DF4B803CF6FDF2CB97B32472143C /* Frameworks */,
+				E22C4BD0948660905EF19D3CC4CCD82F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NBCollageView_Tests";
+			productName = "Pods-NBCollageView_Tests";
+			productReference = 984F5897D1BF1A7B4B743BD9B2FD2C5D /* Pods_NBCollageView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		57E050FE0AB30C37FD606F486CD67966 /* NBCollageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C834FA49444A2D050E7F682AF5F32EA /* Build configuration list for PBXNativeTarget "NBCollageView" */;
+			buildPhases = (
+				874DFF1D464B37C695A7711F441B87E0 /* Sources */,
+				826A5CB03FB5434090737CEAAC0C6B0E /* Frameworks */,
+				82D68481FCB508B999A4FBB13DCC77BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBCollageView;
+			productName = NBCollageView;
+			productReference = 15CA25B22EE479A70D324BF6AF2A6DC0 /* NBCollageView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88D0D45A202C76CDCB9546091A25AB0B /* ImagePicker-ImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9076DD2450A84AE2809F5B9440BCC685 /* Build configuration list for PBXNativeTarget "ImagePicker-ImagePicker" */;
+			buildPhases = (
+				640A00D7C575E7720DCE73226BE54F74 /* Sources */,
+				F30E4275DF37ADD0BF5C8056076BF5C4 /* Frameworks */,
+				4BB17431F68C66F9CF0DA74F0FF75EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ImagePicker-ImagePicker";
+			productName = "ImagePicker-ImagePicker";
+			productReference = E8334E72C1E6FA9BB7238218C166388D /* ImagePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8A17CB894371F02E0326064851AF7C43 /* ImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0444BD49D1F0AA3BCF11ABEC7DEA8E3B /* Build configuration list for PBXNativeTarget "ImagePicker" */;
+			buildPhases = (
+				45DCA4BFBC7C378B2A5BF2664BAACF60 /* Sources */,
+				110E2611FD5754C36D751DFF05044166 /* Frameworks */,
+				0116DD4D1AE10F8D33BC79467BBE4FC8 /* Resources */,
+				5A1E8CE87B81DE78D9C6CAF55847A457 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2469AE7C6965589B61817E6BA00BC69F /* PBXTargetDependency */,
+			);
+			name = ImagePicker;
+			productName = ImagePicker;
+			productReference = 0BBAF8EC8FBA7D5CB7DBE984372BB477 /* ImagePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC86A66FAB3B098EF1466797AB3C7518 /* Pods-NBCollageView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A853D3A24947B4064E518C3CCA1A76F0 /* Build configuration list for PBXNativeTarget "Pods-NBCollageView_Example" */;
+			buildPhases = (
+				E10AEE4C5C3C24EB249544A593AC127E /* Sources */,
+				D43929DE227686F8351141AC72417364 /* Frameworks */,
+				4516365CA0F1037223EBB8BA2F6D6537 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE886D625EF4D554A3B7428F4F5894F6 /* PBXTargetDependency */,
+				EA3929DA24E9BA40EBE80E48E87CBF53 /* PBXTargetDependency */,
+			);
+			name = "Pods-NBCollageView_Example";
+			productName = "Pods-NBCollageView_Example";
+			productReference = A40AE10D5791D8D6ADA7819C8B791B27 /* Pods_NBCollageView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D20B7FA70765070D6074DE526E5DB1B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A17CB894371F02E0326064851AF7C43 /* ImagePicker */,
+				88D0D45A202C76CDCB9546091A25AB0B /* ImagePicker-ImagePicker */,
+				57E050FE0AB30C37FD606F486CD67966 /* NBCollageView */,
+				CC86A66FAB3B098EF1466797AB3C7518 /* Pods-NBCollageView_Example */,
+				07F37AB23E62115CF9E1872D746D2799 /* Pods-NBCollageView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0116DD4D1AE10F8D33BC79467BBE4FC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EAB81EA5C0B8AD03BA9CEDBE641DB0B /* ImagePicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB17431F68C66F9CF0DA74F0FF75EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE3B839B228D2FB151791C791242D04 /* AUTO@3x.png in Resources */,
+				C3290D6F80FE6EE0D5D6D419C93D0E80 /* cameraIcon@3x.png in Resources */,
+				D7CC87164C2B724F1EAABCF6A9A068F4 /* focusIcon@3x.png in Resources */,
+				39528BEA185C60BFFE2E5909006E723D /* OFF@3x.png in Resources */,
+				A50F09D10E907DEE57D57C6AD160F8F7 /* ON@3x.png in Resources */,
+				F88AC4C283F4CE67030F4321693BBAAA /* selectedImageGallery@3x.png in Resources */,
+				DDFA8B7BE2EA5E19E7B475915355D477 /* video@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C94746BA33C05E1800FD9B3354FE55E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABABE9A664BE4FA340532E7F6349B16A /* Pods-NBCollageView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45DCA4BFBC7C378B2A5BF2664BAACF60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F53B83877BABC897067AC39EC03A63 /* AssetManager.swift in Sources */,
+				7BB0D44E3938626F29853182C9205AE7 /* BottomContainerView.swift in Sources */,
+				EABB4532135FDC89BFC940ED172E901E /* ButtonPicker.swift in Sources */,
+				A3D56D26C9EAE0FCA76083C1E7DC6847 /* CameraMan.swift in Sources */,
+				5F3E35F2B166055EEC4E7A50E80958FD /* CameraView.swift in Sources */,
+				B7EA24AFF7D230810AB18E2C89544208 /* Configuration.swift in Sources */,
+				A44FEA8F8C9099C426A5DF8BC50C912B /* ConstraintsSetup.swift in Sources */,
+				0CB932091B520E7F65A74FBFA3FF11A2 /* Helper.swift in Sources */,
+				8A97BCA1E8E4140A84AF581D9BFA4711 /* ImageGalleryLayout.swift in Sources */,
+				F6142E7525478016188C33344951C540 /* ImageGalleryView.swift in Sources */,
+				27E5AAC40E8C4D8DFF70DF4E7021D68E /* ImageGalleryViewCell.swift in Sources */,
+				9D8234BB3230E63318FB87CAA29AD59C /* ImageGalleryViewDataSource.swift in Sources */,
+				4B043088449CCBB537A54D669ED216C5 /* ImagePicker-dummy.m in Sources */,
+				935C2F84774171D23DFC43DA57F172F8 /* ImagePickerController.swift in Sources */,
+				680ECF5AE2B82F3A13B49AC0C5D78D74 /* ImageStack.swift in Sources */,
+				F7DB16A5D3874C16C5E6C70CEBFADC95 /* LocationManager.swift in Sources */,
+				DEC05FECB37B24E58F284AC9B97F7E64 /* StackView.swift in Sources */,
+				B0DED102D2452EC7DEB173264004161A /* TopView.swift in Sources */,
+				DD8C6F683BF022AF2CAA712CB95F5836 /* VideoInfoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		640A00D7C575E7720DCE73226BE54F74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874DFF1D464B37C695A7711F441B87E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA80FEA6CA527BC3B6263E536298BD38 /* NBCollageElement.swift in Sources */,
+				79F0F2B66DD88DB794079D43A89AF7EC /* NBCollageView-dummy.m in Sources */,
+				9C08B9E9C65989202C32C6CFA749EDC8 /* NBCollageView.swift in Sources */,
+				87447A770ED03562E32E19EB24885C53 /* NBExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10AEE4C5C3C24EB249544A593AC127E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6FAE1400EDF107F30268740CB8BDFC /* Pods-NBCollageView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2469AE7C6965589B61817E6BA00BC69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ImagePicker-ImagePicker";
+			target = 88D0D45A202C76CDCB9546091A25AB0B /* ImagePicker-ImagePicker */;
+			targetProxy = 6B8986630584C6CBE06F80050CD944A8 /* PBXContainerItemProxy */;
+		};
+		AE886D625EF4D554A3B7428F4F5894F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImagePicker;
+			target = 8A17CB894371F02E0326064851AF7C43 /* ImagePicker */;
+			targetProxy = A8F22D9EF8AD65B4244A48DDF7D28AF1 /* PBXContainerItemProxy */;
+		};
+		EA3929DA24E9BA40EBE80E48E87CBF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NBCollageView;
+			target = 57E050FE0AB30C37FD606F486CD67966 /* NBCollageView */;
+			targetProxy = 9423AD27CA8FA99E5C9FF5E78877EA3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0292EBB0DC3C74E5148C2BF7E3CBBC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89CB6AE72C0A51D10C23BABDB69D8B68 /* NBCollageView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NBCollageView/NBCollageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NBCollageView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NBCollageView/NBCollageView.modulemap";
+				PRODUCT_NAME = NBCollageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		211FF1E3B1F654F39197ADCFB7F5E12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253CFBEAE45419286EE81AD640AB12A1 /* Pods-NBCollageView_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NBCollageView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NBCollageView_Tests/Pods-NBCollageView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NBCollageView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C22522C3B0D9E15ADD98E1CE3F0AF79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C56115526BCD565385C7E24154CA16 /* Pods-NBCollageView_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NBCollageView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NBCollageView_Example/Pods-NBCollageView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NBCollageView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3923FF9FD99259265285BC1F237F45A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2E9F94E5962A13F9248E4BAAB67121 /* ImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImagePicker";
+				INFOPLIST_FILE = "Target Support Files/ImagePicker/ResourceBundle-ImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3E842D67A4416E45DDFDE839EAF09BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89CB6AE72C0A51D10C23BABDB69D8B68 /* NBCollageView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NBCollageView/NBCollageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NBCollageView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NBCollageView/NBCollageView.modulemap";
+				PRODUCT_NAME = NBCollageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		79160ECAF4D826C0C00A8E4C23F56204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2E9F94E5962A13F9248E4BAAB67121 /* ImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImagePicker/ImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImagePicker/ImagePicker.modulemap";
+				PRODUCT_NAME = ImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C2525AC42236F57444A20B8C86AD3D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2E9F94E5962A13F9248E4BAAB67121 /* ImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImagePicker/ImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImagePicker/ImagePicker.modulemap";
+				PRODUCT_NAME = ImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A0A704FEFFE60D7C281DF9736E2F59C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A38264E5EF0EFF2E700FE1691AEF619 /* Pods-NBCollageView_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NBCollageView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NBCollageView_Tests/Pods-NBCollageView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NBCollageView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2D824AF090084F63886B5EDF650CC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAD0CD34F4481D71DE02D893D39A7D7 /* Pods-NBCollageView_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NBCollageView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NBCollageView_Example/Pods-NBCollageView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NBCollageView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1944AB02FC48BF77E241FAFF6A41BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2E9F94E5962A13F9248E4BAAB67121 /* ImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImagePicker";
+				INFOPLIST_FILE = "Target Support Files/ImagePicker/ResourceBundle-ImagePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0444BD49D1F0AA3BCF11ABEC7DEA8E3B /* Build configuration list for PBXNativeTarget "ImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C2525AC42236F57444A20B8C86AD3D7 /* Debug */,
+				79160ECAF4D826C0C00A8E4C23F56204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E810AC73B574CEA4F0E47743051D190 /* Build configuration list for PBXNativeTarget "Pods-NBCollageView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A704FEFFE60D7C281DF9736E2F59C3 /* Debug */,
+				211FF1E3B1F654F39197ADCFB7F5E12D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C834FA49444A2D050E7F682AF5F32EA /* Build configuration list for PBXNativeTarget "NBCollageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E842D67A4416E45DDFDE839EAF09BC4 /* Debug */,
+				0292EBB0DC3C74E5148C2BF7E3CBBC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9076DD2450A84AE2809F5B9440BCC685 /* Build configuration list for PBXNativeTarget "ImagePicker-ImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1944AB02FC48BF77E241FAFF6A41BCE /* Debug */,
+				3923FF9FD99259265285BC1F237F45A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A853D3A24947B4064E518C3CCA1A76F0 /* Build configuration list for PBXNativeTarget "Pods-NBCollageView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D824AF090084F63886B5EDF650CC8B /* Debug */,
+				2C22522C3B0D9E15ADD98E1CE3F0AF79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

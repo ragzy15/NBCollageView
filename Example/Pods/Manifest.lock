@@ -1,0 +1,19 @@
+PODS:
+  - ImagePicker (3.0.0)
+  - NBCollageView (0.1)
+
+DEPENDENCIES:
+  - ImagePicker (~> 3.0)
+  - NBCollageView (from `../`)
+
+EXTERNAL SOURCES:
+  NBCollageView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ImagePicker: 973953c25960fe04729a7082a56194321c6762d2
+  NBCollageView: e2728d6797eb0ee72abf63ee9ce25d544aec63b4
+
+PODFILE CHECKSUM: 78f4ac8813a7cd807b2a80a28ff76fb8b8ece9e6
+
+COCOAPODS: 1.4.0

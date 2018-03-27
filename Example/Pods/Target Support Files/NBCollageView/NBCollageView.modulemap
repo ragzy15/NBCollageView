@@ -1,0 +1,6 @@
+framework module NBCollageView {
+  umbrella header "NBCollageView-umbrella.h"
+
+  export *
+  module * { export * }
+}
