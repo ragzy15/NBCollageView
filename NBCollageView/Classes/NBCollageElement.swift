@@ -115,11 +115,29 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
         
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(NBCollageElement.viewPanned(_:)))
         imageView.addGestureRecognizer(panGesture)
-        panGesture.delegate = self
         
+        let rotationGesture = UIRotationGestureRecognizer(target: self, action: #selector(NBCollageElement.viewRotated(_:)))
+        imageView.addGestureRecognizer(rotationGesture)
+        
+        let pinchgesture = UIPinchGestureRecognizer(target: self, action: #selector(NBCollageElement.handlePinchGesture(recognizer:)))
+        imageView.addGestureRecognizer(pinchgesture)
+        
+        rotationGesture.delegate = self
+        panGesture.delegate = self
+        pinchgesture.delegate = self        
     }
     
-    @objc func viewPanned(_ sender:UIPanGestureRecognizer){
+    @objc func viewRotated(_ gesture:UIRotationGestureRecognizer) {
+        gesture.view?.transform = (gesture.view?.transform.rotated(by: gesture.rotation))!
+        gesture.rotation = 0
+    }
+    
+    @objc func handlePinchGesture(recognizer: UIPinchGestureRecognizer) {
+        recognizer.view?.transform = (recognizer.view?.transform.scaledBy(x: recognizer.scale, y: recognizer.scale))!
+        recognizer.scale = 1
+    }
+    
+    @objc func viewPanned(_ sender:UIPanGestureRecognizer) {
         
         switch sender.state {
         case .began:
@@ -176,5 +194,9 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
             sender.view?.center = CGPoint(x: sender.view!.center.x + translation.x, y: sender.view!.center.y + translation.y)
             sender.setTranslation(CGPoint.zero, in: sender.view!.superview)
         }
+    }
+    
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
 }
