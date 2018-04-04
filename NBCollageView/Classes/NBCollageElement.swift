@@ -11,6 +11,7 @@ import UIKit
 @objc protocol NBCollageElementProtocol: NSObjectProtocol {
     @objc optional func didSelectNBCollageElement(element:NBCollageElement)
     @objc optional func didBeginReceivingTouches(element:NBCollageElement)
+    @objc optional func didMoveOutsideCurrentElement(element:NBCollageElement)
     @objc optional func didEndReceivingTouches(element:NBCollageElement)
     @objc optional func didSwapCollageElements(primaryElement:NBCollageElement, secondaryElement:NBCollageElement)
     @objc optional func didEnterDeleteView(collageElement:NBCollageElement, deleteView:UIView)
@@ -184,6 +185,8 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
                 sender.view!.frame.size = CGSize(width: 200, height: 200)
                 sender.view!.frame.size = (sender.view! as! UIImageView).imageFrameSize()
                 sender.view?.center = sender.location(in: self)
+                
+                self.delegate?.didMoveOutsideCurrentElement?(element: self)
             }
             
             if let deleteView = self.deleteView {

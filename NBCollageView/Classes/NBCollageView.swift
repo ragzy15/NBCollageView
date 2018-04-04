@@ -11,10 +11,13 @@ import UIKit
 @objc public protocol NBCollageProtocol: NSObjectProtocol {
     @objc optional func didSelectCollageElement(element:NBCollageElement)
     @objc optional func didBeginReceivingTouches(element:NBCollageElement)
+    @objc optional func didMoveOutsideCurrentElement(element:NBCollageElement)
     @objc optional func didEndReceivingTouches(element:NBCollageElement)
     @objc optional func didEnterDeleteView(collageElement:NBCollageElement, deleteView:UIView)
     @objc optional func didLeaveDeleteView(collageElement:NBCollageElement, deleteView:UIView)
     @objc optional func didDeleteImageInElement(collageElement:NBCollageElement)
+    
+    var borderColor: UIColor? { get set }
 }
 
 public class NBCollageView: UIView, NBCollageElementProtocol {
@@ -47,6 +50,14 @@ public class NBCollageView: UIView, NBCollageElementProtocol {
         for frame in relativeFrames {
             let child = NBCollageElement(superView: self, relativeFrame: CGRectFromString(frame))
             child.delegate = self
+            
+            if let borderColor = self.delegate?.borderColor {
+                let layer = CALayer()
+                layer.frame = child.bounds
+                layer.borderColor = borderColor.cgColor
+                layer.borderWidth = 1
+                child.layer.addSublayer(layer)
+            }
         }
     }
     
@@ -72,5 +83,9 @@ public class NBCollageView: UIView, NBCollageElementProtocol {
     
     func didBeginReceivingTouches(element: NBCollageElement) {
         self.delegate?.didBeginReceivingTouches?(element: element)
+    }
+    
+    func didMoveOutsideCurrentElement(element: NBCollageElement) {
+        self.delegate?.didMoveOutsideCurrentElement?(element: element)
     }
 }
