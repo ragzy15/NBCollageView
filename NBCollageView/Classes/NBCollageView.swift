@@ -10,6 +10,8 @@ import UIKit
 
 @objc public protocol NBCollageProtocol: NSObjectProtocol {
     @objc optional func didSelectCollageElement(element:NBCollageElement)
+    @objc optional func didBeginReceivingTouches(element:NBCollageElement)
+    @objc optional func didEndReceivingTouches(element:NBCollageElement)
     @objc optional func didEnterDeleteView(collageElement:NBCollageElement, deleteView:UIView)
     @objc optional func didLeaveDeleteView(collageElement:NBCollageElement, deleteView:UIView)
     @objc optional func didDeleteImageInElement(collageElement:NBCollageElement)
@@ -62,5 +64,13 @@ public class NBCollageView: UIView, NBCollageElementProtocol {
     
     func didDeleteImageInElement(collageElement:NBCollageElement) {
         self.delegate?.didDeleteImageInElement?(collageElement: collageElement)
+    }
+    
+    func didEndReceivingTouches(element: NBCollageElement) {
+        self.delegate?.didEndReceivingTouches?(element: element)
+    }
+    
+    func didBeginReceivingTouches(element: NBCollageElement) {
+        self.delegate?.didBeginReceivingTouches?(element: element)
     }
 }

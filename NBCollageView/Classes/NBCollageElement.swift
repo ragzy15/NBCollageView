@@ -10,6 +10,8 @@ import UIKit
 
 @objc protocol NBCollageElementProtocol: NSObjectProtocol {
     @objc optional func didSelectNBCollageElement(element:NBCollageElement)
+    @objc optional func didBeginReceivingTouches(element:NBCollageElement)
+    @objc optional func didEndReceivingTouches(element:NBCollageElement)
     @objc optional func didSwapCollageElements(primaryElement:NBCollageElement, secondaryElement:NBCollageElement)
     @objc optional func didEnterDeleteView(collageElement:NBCollageElement, deleteView:UIView)
     @objc optional func didLeaveDeleteView(collageElement:NBCollageElement, deleteView:UIView)
@@ -56,6 +58,10 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
     
     @objc func childViewTapped(_ sender:UITapGestureRecognizer) {
         self.delegate?.didSelectNBCollageElement?(element: self)
+    }
+    
+    public func getElementImage() -> UIImage? {
+        return self.elementImage
     }
     
     private class func swapImagesInElements(primaryElement: NBCollageElement, secondayElement: NBCollageElement) {
@@ -143,6 +149,7 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
         case .began:
             self.superview?.bringSubview(toFront: self)
             self.ousideTheBounds = false
+            self.delegate?.didBeginReceivingTouches?(element: self)
         case .ended,.possible,.cancelled,.failed:
             self.clipsToBounds = true
             self.ousideTheBounds = false
@@ -168,6 +175,7 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
                     return
                 }
             }
+            self.delegate?.didEndReceivingTouches?(element: self)
         case .changed:
             if !self.bounds.contains(sender.location(in: self)) && !ousideTheBounds {
                 self.clipsToBounds = false
