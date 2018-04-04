@@ -16,12 +16,11 @@ import UIKit
     @objc optional func didEnterDeleteView(collageElement:NBCollageElement, deleteView:UIView)
     @objc optional func didLeaveDeleteView(collageElement:NBCollageElement, deleteView:UIView)
     @objc optional func didDeleteImageInElement(collageElement:NBCollageElement)
-    
-    var borderColor: UIColor? { get set }
 }
 
 public class NBCollageView: UIView, NBCollageElementProtocol {
 
+    public var borderColor: UIColor?
     public var translationImageView: UIImageView?
     public var delegate: NBCollageProtocol?
     public var deleteView: UIView? {
@@ -51,7 +50,7 @@ public class NBCollageView: UIView, NBCollageElementProtocol {
             let child = NBCollageElement(superView: self, relativeFrame: CGRectFromString(frame))
             child.delegate = self
             
-            if let borderColor = self.delegate?.borderColor {
+            if let borderColor = self.borderColor {
                 let layer = CALayer()
                 layer.frame = child.bounds
                 layer.borderColor = borderColor.cgColor
