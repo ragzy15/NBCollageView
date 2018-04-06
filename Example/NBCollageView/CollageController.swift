@@ -34,6 +34,7 @@ class CollageController: UIViewController, NBCollageProtocol, ImagePickerDelegat
     
     func loadCollages() {
         self.containerView.delegate = self
+        self.containerView.placeholderImage = UIImage(named: "placeHolder")!
         self.containerView.initializeCollageView(relativeFrames: self.collageItem?.relativeFrames ?? [String]())
         self.containerView.deleteView = deleteView
         for element in self.containerView.allElements {

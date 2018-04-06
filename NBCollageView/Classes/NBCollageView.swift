@@ -20,6 +20,7 @@ import UIKit
 
 public class NBCollageView: UIView, NBCollageElementProtocol {
 
+    public var placeholderImage: UIImage?
     public var borderColor: UIColor?
     public var translationImageView: UIImageView?
     public var delegate: NBCollageProtocol?
@@ -57,6 +58,7 @@ public class NBCollageView: UIView, NBCollageElementProtocol {
                 layer.borderWidth = 1
                 child.layer.addSublayer(layer)
             }
+            child.placeholderImage = placeholderImage
         }
     }
     

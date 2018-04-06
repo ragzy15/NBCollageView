@@ -28,6 +28,19 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
     private var elementImage: UIImage?
     var deleteView: UIView?
     private var isInsideDelete = false
+    private var placeholderImageView: UIImageView?
+    public var placeholderImage: UIImage? {
+        didSet {
+            if let placeholderImage = placeholderImage {
+                let imageView = UIImageView(image: placeholderImage)
+                imageView.frame.size = CGSize(width: 70, height: 70)
+                imageView.contentMode = .scaleAspectFit
+                self.addSubview(imageView)
+                imageView.center = CGPoint(x:self.bounds.size.width/2,y:self.bounds.size.height/2)
+                self.placeholderImageView = imageView
+            }
+        }
+    }
     
     private class func frameWithRelativeFrame(relativeFrame:CGRect, superview: UIView) -> CGRect {
         if !relativeFrame.equalTo(CGRect.zero) {
@@ -78,12 +91,15 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
         if firstImage != nil {
             secondayElement.addElementImage(image: firstImage as! UIImage)
             secondayElement.clipsToBounds = true
-            
+        } else {
+            secondayElement.placeholderImage = secondayElement.placeholderImage?.copy() as? UIImage
         }
         
         if secondImage != nil {
             primaryElement.addElementImage(image: secondImage as! UIImage)
             primaryElement.clipsToBounds = true
+        } else {
+            primaryElement.placeholderImage = primaryElement.placeholderImage?.copy() as? UIImage
         }
     }
     
@@ -120,6 +136,9 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
         
         self.elementImage = image
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(NBCollageElement.viewTapped(_:)))
+        imageView.addGestureRecognizer(tapGesture)
+        
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(NBCollageElement.viewPanned(_:)))
         imageView.addGestureRecognizer(panGesture)
         
@@ -132,6 +151,10 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
         rotationGesture.delegate = self
         panGesture.delegate = self
         pinchgesture.delegate = self        
+    }
+    
+    @objc func viewTapped(_ gesture:UIRotationGestureRecognizer) {
+        self.delegate?.didSelectNBCollageElement?(element: self)
     }
     
     @objc func viewRotated(_ gesture:UIRotationGestureRecognizer) {
@@ -159,6 +182,7 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
             if self.deleteView != nil && self.deleteView!.bounds.contains(sender.location(in: self.deleteView!)){
                 self.elementImage = nil
                 sender.view?.removeFromSuperview()
+                self.placeholderImage = self.placeholderImage?.copy() as? UIImage
                 self.delegate?.didDeleteImageInElement?(collageElement: self)
             } else {
                 for view in self.superview?.subviews ?? [UIView]() {
@@ -182,7 +206,7 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
                 self.clipsToBounds = false
                 self.ousideTheBounds = true
                 
-                sender.view!.frame.size = CGSize(width: 200, height: 200)
+                sender.view!.frame.size = CGSize(width: 120, height: 120)
                 sender.view!.frame.size = (sender.view! as! UIImageView).imageFrameSize()
                 sender.view?.center = sender.location(in: self)
                 
