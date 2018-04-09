@@ -29,6 +29,7 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
     var deleteView: UIView?
     private var isInsideDelete = false
     private var placeholderImageView: UIImageView?
+    private var imageView: UIImageView?
     public var placeholderImage: UIImage? {
         didSet {
             if let placeholderImage = placeholderImage {
@@ -78,6 +79,10 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
         return self.elementImage
     }
     
+    public func getElementImageView() -> UIImageView? {
+        return self.imageView
+    }
+    
     private class func swapImagesInElements(primaryElement: NBCollageElement, secondayElement: NBCollageElement) {
         let firstImage = primaryElement.elementImage?.copy()
         let secondImage = secondayElement.elementImage?.copy()
@@ -122,31 +127,29 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
         //Reset Clip To Bounds
         self.clipsToBounds = true
         
-        let imageView = UIImageView(image: image)
-        imageView.isUserInteractionEnabled = true
+        let newImageView = UIImageView(image: image)
+        newImageView.isUserInteractionEnabled = true
         
-        imageView.frame.size = self.frame.size
-        imageView.contentMode = .scaleAspectFill
-        imageView.frame.size = imageView.imageFrameSize()
-        imageView.center = CGPoint(x: self.frame.size.width/2, y: self.frame.size.height/2)
-        destinationRect = imageView.frame
+        newImageView.frame.size = self.frame.size
+        newImageView.contentMode = .scaleAspectFill
+        newImageView.frame.size = newImageView.imageFrameSize()
+        newImageView.center = CGPoint(x: self.frame.size.width/2, y: self.frame.size.height/2)
+        destinationRect = newImageView.frame
         
-        imageView.frame = destinationRect
-        self.addSubview(imageView)
+        newImageView.frame = destinationRect
+        self.addSubview(newImageView)
         
         self.elementImage = image
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(NBCollageElement.viewTapped(_:)))
-        imageView.addGestureRecognizer(tapGesture)
+        self.imageView = newImageView
         
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(NBCollageElement.viewPanned(_:)))
-        imageView.addGestureRecognizer(panGesture)
+        newImageView.addGestureRecognizer(panGesture)
         
         let rotationGesture = UIRotationGestureRecognizer(target: self, action: #selector(NBCollageElement.viewRotated(_:)))
-        imageView.addGestureRecognizer(rotationGesture)
+        newImageView.addGestureRecognizer(rotationGesture)
         
         let pinchgesture = UIPinchGestureRecognizer(target: self, action: #selector(NBCollageElement.handlePinchGesture(recognizer:)))
-        imageView.addGestureRecognizer(pinchgesture)
+        newImageView.addGestureRecognizer(pinchgesture)
         
         rotationGesture.delegate = self
         panGesture.delegate = self
