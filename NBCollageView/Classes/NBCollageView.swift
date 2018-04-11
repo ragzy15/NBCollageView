@@ -44,6 +44,7 @@ public class NBCollageView: UIView, NBCollageElementProtocol {
             }
             return elements
         }
+        
     }
     
     public func initializeCollageView(relativeFrames:[String]) {
@@ -53,7 +54,7 @@ public class NBCollageView: UIView, NBCollageElementProtocol {
             
             if let borderColor = self.borderColor {
                 let layer = CALayer()
-                layer.frame = child.bounds
+                layer.frame = CGRect(x: 0, y: 0, width: floor(child.frame.width), height: floor(child.frame.height))
                 layer.borderColor = borderColor.cgColor
                 layer.borderWidth = 1
                 child.layer.addSublayer(layer)
