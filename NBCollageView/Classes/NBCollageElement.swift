@@ -198,7 +198,7 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
                         }
                     }
                 }
-                if !droppedInContainer {
+                if !droppedInContainer && !self.bounds.contains(sender.location(in: self)) {
                     self.addElementImage(image: self.elementImage?.copy() as! UIImage)
                     return
                 }
