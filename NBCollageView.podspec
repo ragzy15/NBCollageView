@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NBCollageView'
-  s.version          = '0.8'
+  s.version          = '0.9'
   s.summary          = 'Helps you create new collages dynamically without worrying about minute gestures'
-  s.swift_version    = '3.0'
+  s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -20,11 +20,11 @@ Pod::Spec.new do |s|
 
   s.description      = 'Helps you create new collages with dynamic layouts without worrying about minute gestures. There is no limit to layout type or number. Gesture dragging of collage is there and you will also be able to swap two images. In addition to it you can also assign a delete button. dragging upon delete button will remove the image from view.'
 
-  s.homepage         = 'https://github.com/nikhilbatra789/NBCollageView'
+  s.homepage         = 'https://github.com/ragzy15/NBCollageView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nikhilbatra789' => 'nikhilbatra789@gmail.com' }
-  s.source           = { :git => 'https://github.com/nikhilbatra789/NBCollageView.git', :tag => '0.8' }
+  s.source           = { :git => 'https://github.com/ragzy15/NBCollageView.git', :tag => '0.9' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
