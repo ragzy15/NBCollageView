@@ -174,7 +174,7 @@ public class NBCollageElement: UIControl, UIGestureRecognizerDelegate {
         
         switch sender.state {
         case .began:
-            self.superview?.bringSubview(toFront: self)
+            self.superview?.bringSubviewToFront(self)
             self.ousideTheBounds = false
             self.delegate?.didBeginReceivingTouches?(element: self)
         case .ended,.possible,.cancelled,.failed:

@@ -49,7 +49,7 @@ public class NBCollageView: UIView, NBCollageElementProtocol {
     
     public func initializeCollageView(relativeFrames:[String]) {
         for frame in relativeFrames {
-            let child = NBCollageElement(superView: self, relativeFrame: CGRectFromString(frame))
+            let child = NBCollageElement(superView: self, relativeFrame: NSCoder.cgRect(for: frame))
             child.delegate = self
             
             if let borderColor = self.borderColor {
